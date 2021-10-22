@@ -1,2 +1,2 @@
-# blog-pessoal
-Meu blog
+# blogPessoal-api
+API para blog pessoal, consumo em Angular.
