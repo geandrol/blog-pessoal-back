@@ -55,9 +55,9 @@ public class UsuarioController {
 				.body(usuarioService.CadastrarUsuario(usuario));
 	}
 
-	@PutMapping
-	public ResponseEntity<Usuario> Put(@RequestBody Usuario usuario) {
-		return ResponseEntity.ok(repository.save(usuario));
+	@PutMapping("/atualizar")
+	public ResponseEntity<Usuario> put(@Valid @RequestBody Usuario usuario){
+		return usuarioService.atualizarUsuario(usuario);
 	}
 
 }
