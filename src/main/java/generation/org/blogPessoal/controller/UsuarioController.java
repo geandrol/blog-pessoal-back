@@ -31,8 +31,9 @@ public class UsuarioController {
 	@Autowired
 	private UsuarioService usuarioService;
 
-	@GetMapping
-	public ResponseEntity<List<Usuario>> GetAll() {
+	
+	@GetMapping("/all")
+	public ResponseEntity <List<Usuario>> getAll() {
 		return ResponseEntity.ok(repository.findAll());
 	}
 
